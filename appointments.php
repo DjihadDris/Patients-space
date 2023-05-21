@@ -249,7 +249,7 @@ $conn->close();
       </select>
      </div>
      <div class="field">
-      <label style="color: white !important;">Médecin</label>
+      <label style="color: white !important;">Médecin/ Pharmacien</label>
       <select class="ui search dropdown" id="doctor"><option value="">--Sélectionner--</option></select>
      </div>
     </div>
@@ -290,12 +290,12 @@ $conn->close();
         </div>
 <div style="float: right; position: relative;">
 <div class="ui buttons" style="width: 100% !important;">
-<button class="ui green left labeled icon button inverted" onclick="Card()">
+<button class="ui blue left labeled icon button inverted" onclick="Card()">
   <i class="address card icon"></i>
   La carte du RDV
 </button>
 <div class="or" data-text="ou"></div>
-<button class="ui teal right labeled icon button inverted" onclick="Add()">
+<button class="ui green right labeled icon button inverted" onclick="Add()">
   <i class="add icon"></i>
   Créer un RDV
 </button>
@@ -505,7 +505,7 @@ alertify.error(dataResult.message);
     alertify.error("Veuillez sélectionner la date");
   }
 }else{
-  alertify.error("Veuillez sélectionner le médecin");
+  alertify.error("Veuillez sélectionner le médecin/ pharmacien");
 }
 
 }
